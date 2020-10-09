@@ -17,7 +17,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yanhaha233.github.io/assets/UML.png">
 <meta property="article:published_time" content="2020-10-08T06:30:51.000Z">
-<meta property="article:modified_time" content="2020-10-08T08:46:36.664Z">
+<meta property="article:modified_time" content="2020-10-08T23:47:37.930Z">
 <meta property="article:author" content="YanHaHa">
 <meta property="article:tag" content="设计模式">
 <meta name="twitter:card" content="summary">
@@ -66,7 +66,7 @@
 
     <nav class="header-menu">
       <ul>
-        总文章数 18 
+        总文章数 20 
         <li><a href="/">大</a></li>
         
         <li><a href="/tags/%E7%AE%97%E6%B3%95/">道</a></li>
@@ -212,7 +212,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-keyboard-o"></i>
       <span class="post-meta-item-text"> 字数统计: </span>
-      <span class="post-count">867字</span>
+      <span class="post-count">902字</span>
     </span>
   </span>
 
@@ -259,8 +259,9 @@
 
 <h5 id="客户端代码-1"><a href="#客户端代码-1" class="headerlink" title="客户端代码"></a>客户端代码</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span><span class="params">(<span class="built_in">string</span>[] args)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Operation oper;</span><br><span class="line">    oper = OperationFactory.createOperate(<span class="string">&quot;+&quot;</span>);</span><br><span class="line">    oper.NumberA = <span class="number">1</span>;</span><br><span class="line">    oper.NumberB = <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">double</span> result = oper.GetResult();</span><br><span class="line">    Console.WriteLine(result);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>这样之后，修改运算只需要修改相关的运算类即可，添加复杂运算只需要添加相应的运算子类，并修改运算类工厂，在 switch 中增加分支即可</p>
+<p>这样之后，修改运算只需要修改相关的运算类即可，添加复杂运算只需要添加相应的运算子类，并修改运算类工厂，在 switch 中增加分支即可。</p>
 <h5 id="UML-图"><a href="#UML-图" class="headerlink" title="UML 图"></a>UML 图</h5><p><img src="/assets/UML.png" alt="UML"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">注：只有运算类为抽象类（斜体），其余类字体不应该为斜体，继承箭头应该是空心三角。</span><br></pre></td></tr></table></figure>
 
       
 
@@ -357,6 +358,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2020/10/09/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          策略模式
+        
+      </div>
+    </a>
   
   
     <a href="/2020/10/08/%E6%88%91%E6%9C%80%E5%96%9C%E6%AC%A2%E7%9A%84%E7%94%B5%E5%BD%B1/" id="article-nav-older" class="article-nav-link-wrap">
@@ -8555,14 +8565,6 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">数组</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">双指针</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">链表</a>
               </li>
              
@@ -8572,6 +8574,14 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">中等</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">数组</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">双指针</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -8591,19 +8601,19 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">动态规划</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">栈</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">设计模式</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">动态规划</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">二分查找</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">栈</a>
               </li>
             
             <div class="clearfix"></div>
