@@ -6,24 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yanhaha233.github.io">
-  <title>策略模式 | YanHaHa&#39;s Blog</title>
+  <title>Archives: 2020 | YanHaHa&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="商场收银软件，根据客户所购买商品的单价和数量，向客户收费通过单价和数量来确定费用，再通过重置来进行重新计算。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="策略模式">
-<meta property="og:url" content="http://yanhaha233.github.io/2020/10/09/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="YanHaHa&#39;s Blog">
+<meta property="og:url" content="http://yanhaha233.github.io/archives/2020/page/5/index.html">
 <meta property="og:site_name" content="YanHaHa&#39;s Blog">
-<meta property="og:description" content="商场收银软件，根据客户所购买商品的单价和数量，向客户收费通过单价和数量来确定费用，再通过重置来进行重新计算。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yanhaha233.github.io/assets/UML-cash.png">
-<meta property="og:image" content="http://yanhaha233.github.io/assets/UML-Strategy.png">
-<meta property="og:image" content="http://yanhaha233.github.io/assets/UML-StrategyCash.png">
-<meta property="article:published_time" content="2020-10-08T23:45:16.000Z">
-<meta property="article:modified_time" content="2020-10-09T05:29:57.626Z">
 <meta property="article:author" content="YanHaHa">
-<meta property="article:tag" content="设计模式">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yanhaha233.github.io/assets/UML-cash.png">
   
     <link rel="alternative" href="/atom.xml" title="YanHaHa&#39;s Blog" type="application/atom+xml">
   
@@ -193,251 +184,53 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-             <article id="post-策略模式" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      策略模式
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/10/05/%E7%BD%AE%E9%A1%B6/" class="archive-article-date">
+  	<time datetime="2020-10-05T02:27:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-05</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2020/10/05/%E7%BD%AE%E9%A1%B6/">它为什么在这</a>
     </h1>
   
 
-        
-        <a href="/2020/10/09/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/" class="archive-article-date">
-  	<time datetime="2020-10-08T23:45:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-09</time>
-</a>
-        
-          <div style="margin-top: 10px">
-  <span class="post-time">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-keyboard-o"></i>
-      <span class="post-meta-item-text"> 字数统计: </span>
-      <span class="post-count">1.9k字</span>
-    </span>
-  </span>
-
-  <span class="post-time">
-    &nbsp; | &nbsp;
-    <span class="post-meta-item-icon">
-      <i class="fa fa-hourglass-half"></i>
-      <span class="post-meta-item-text"> 阅读时长: </span>
-      <span class="post-count">8分</span>
-    </span>
-  </span>
-</div>
-
+        <div class="article-info info-on-right">
           
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="商场收银软件，根据客户所购买商品的单价和数量，向客户收费"><a href="#商场收银软件，根据客户所购买商品的单价和数量，向客户收费" class="headerlink" title="商场收银软件，根据客户所购买商品的单价和数量，向客户收费"></a>商场收银软件，根据客户所购买商品的单价和数量，向客户收费</h2><p>通过单价和数量来确定费用，再通过重置来进行重新计算。</p>
-<a id="more"></a>
+          
 
-<h5 id="商场收银系统-1-0"><a href="#商场收银系统-1-0" class="headerlink" title="商场收银系统 1.0"></a>商场收银系统 1.0</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">double</span> total = <span class="number">0.0</span>d;  <span class="comment">//声明一个double变量total 来计算总计</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">btnOk_Click</span><span class="params">(object sender,EventArgs e)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">double</span> totalPrices = Convert.ToDouble(txtPrice.Text) * Convert.ToDouble(txtNum.Text);</span><br><span class="line">    <span class="comment">//声明一个double变量totalPrices来计算每个商品的单价(txtPrice) * 数量(txtNum) 后的合计</span></span><br><span class="line"></span><br><span class="line">    total = total + totalPrices;</span><br><span class="line">    <span class="comment">//将每个商品合计计入总计</span></span><br><span class="line"></span><br><span class="line">    lbxList.Items.Add(<span class="string">&quot;单价: &quot;</span>+txtPrice.Text+<span class="string">&quot;数量: &quot;</span>+txtNum.Text+<span class="string">&quot;合计: &quot;</span>+totalPrices.ToString());</span><br><span class="line">    <span class="comment">//在列表框中显示信息</span></span><br><span class="line"></span><br><span class="line">    lblResult.Text = total.ToString();</span><br><span class="line">    <span class="comment">//在lblResult标签上显示总计数</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>实时情况，目前商场搞活动，全场商品打 8 折。再过半年，商场周年庆，全场商品打 5 折。</p>
-<h5 id="商场收银系统-1-1"><a href="#商场收银系统-1-1" class="headerlink" title="商场收银系统 1.1"></a>商场收银系统 1.1</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">double</span> total = <span class="number">0.0</span>d;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Form1_Load</span><span class="params">(object sender,EventArgs e)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cbxType.Items.AddRange(<span class="keyword">new</span> object[] &#123;<span class="string">&quot;正常收费&quot;</span>,<span class="string">&quot;打八折&quot;</span>,<span class="string">&quot;打七折&quot;</span>,<span class="string">&quot;打五折&quot;</span>&#125;);</span><br><span class="line">    <span class="comment">//在ComboBox中加下拉选项</span></span><br><span class="line">    cbxType.SelectedIndex = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">btnOk_Click</span><span class="params">(object sender,EventArgs e)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">double</span> totalPrices = <span class="number">0</span>d;</span><br><span class="line">    <span class="keyword">switch</span>(cbxType.SelectedIndex) <span class="comment">//根据选项决定打折额度</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">0</span>:</span><br><span class="line">            totalPrices = Convert.ToDouble(txtPrice.Text) * Convert.ToDouble(txtNum.Text);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">            totalPrices = Convert.ToDouble(txtPrice.Text) * Convert.ToDouble(txtNum.Text)*<span class="number">0.8</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">            totalPrices = Convert.ToDouble(txtPrice.Text) * Convert.ToDouble(txtNum.Text)*<span class="number">0.7</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">            totalPrices = Convert.ToDouble(txtPrice.Text) * Convert.ToDouble(txtNum.Text)*<span class="number">0.5</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    total = total + totalPrices;</span><br><span class="line">    lbxList.Items.Add(<span class="string">&quot;单价: &quot;</span> + txtPrice.Text + <span class="string">&quot;数量: &quot;</span> + txtNum.Text</span><br><span class="line">        + <span class="string">&quot; &quot;</span>+cbxType.SelectedItem+ <span class="string">&quot;合计: &quot;</span> + totalPrices.ToString());</span><br><span class="line">    lblResult.Text = total.ToString();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>需求再次发生变化，活动力度加大，需要有满 300 减 100 的促销算法。</p>
-<p>分析：简单工厂模式,打折基本是一样的，初始化一个参数，满多少送多少，需要两个参数。<br><b>面向对象的编程，并不是类越多越好，类的划分是为了封装，但分类的基础是抽象，具有相同属性和功能的对象的抽象集合才是类</b></p>
-<h5 id="UML-图"><a href="#UML-图" class="headerlink" title="UML 图"></a>UML 图</h5><p><img src="/assets/UML-cash.png" alt="UML-CASH"></p>
-<h5 id="商场收银系统-1-1-2"><a href="#商场收银系统-1-1-2" class="headerlink" title="商场收银系统 1.1.2"></a>商场收银系统 1.1.2</h5><h6 id="现金收费抽象类"><a href="#现金收费抽象类" class="headerlink" title="现金收费抽象类"></a>现金收费抽象类</h6><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">abstract <span class="class"><span class="keyword">class</span> <span class="title">CashSuper</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> abstract <span class="keyword">double</span> <span class="title">acceptCash</span><span class="params">(<span class="keyword">double</span> money)</span></span>;</span><br><span class="line">    <span class="comment">//现金收取超类的抽象方法，收取现金，参数为原价，返回为当前价</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h6 id="正常收费子类"><a href="#正常收费子类" class="headerlink" title="正常收费子类"></a>正常收费子类</h6><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CashNormal</span>:</span>CashSuper</span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">double</span> <span class="title">acceptCash</span><span class="params">(<span class="keyword">double</span> money)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> money;</span><br><span class="line">        <span class="comment">//正常收费，原价返回</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h6 id="打折收费子类"><a href="#打折收费子类" class="headerlink" title="打折收费子类"></a>打折收费子类</h6><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CashRebate</span>:</span>CashSuper</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">double</span> moneyRebate = <span class="number">1</span>d;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">CashRebate</span><span class="params">(<span class="built_in">string</span> moneyRebate)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.moenyRebate = <span class="keyword">double</span>.Parse(moneyRebate);</span><br><span class="line">        <span class="comment">//打折收费，初始化时，必须输入折扣率，如八折，也就是0.8</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">double</span> <span class="title">acceptCash</span><span class="params">(<span class="keyword">double</span> money)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> money * moneyRebate;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h6 id="返利收费子类"><a href="#返利收费子类" class="headerlink" title="返利收费子类"></a>返利收费子类</h6><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CashReturn</span> :</span> CashSuper</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">double</span> moneyCondition = <span class="number">0.0</span>d;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">double</span> moneyReturn = <span class="number">0.0</span>d;</span><br><span class="line">    <span class="comment">//返利收费，初始化时必须要输入返利条件和返利值，</span></span><br><span class="line">    <span class="comment">//比如满300返100，则moneyCondition为300，moneyReturn为100</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">CashReturn</span><span class="params">(<span class="built_in">string</span> moneyCondition,<span class="built_in">string</span> moneyReturn)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.moneyCondition = <span class="keyword">double</span>.Parse(moneyCondition);</span><br><span class="line">        <span class="keyword">this</span>.moneyReturn = <span class="keyword">double</span>.Parse(moneyReturn);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">double</span> <span class="title">acceptCash</span><span class="params">(<span class="keyword">double</span> money)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">double</span> result = money;</span><br><span class="line">        <span class="keyword">if</span>(money&gt;=moneyCondition)</span><br><span class="line">            result = money - Math.Floor(money/moneyCondition) * moneyReturn;</span><br><span class="line">            <span class="comment">//floor(x) 求不大于x的最大整数</span></span><br><span class="line">            <span class="comment">//大于返利条件，则需要减去返利值</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h6 id="现金收费工厂类"><a href="#现金收费工厂类" class="headerlink" title="现金收费工厂类"></a>现金收费工厂类</h6><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CashFactory</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> CashSuper <span class="title">createCashAccept</span><span class="params">(<span class="built_in">string</span> type)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        CashSuper cs = null;</span><br><span class="line">        <span class="keyword">switch</span>(type)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&quot;正常收费&quot;</span>:</span><br><span class="line">                cs = <span class="keyword">new</span> CashNormal();</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&quot;满300减100&quot;</span>:</span><br><span class="line">                CashReturn cr1 = <span class="keyword">new</span> CashReturn(<span class="string">&quot;300&quot;</span>,<span class="string">&quot;100&quot;</span>);</span><br><span class="line">                cs = cr1;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&quot;打8折&quot;</span>:</span><br><span class="line">                CashRebate cr2 = <span class="keyword">new</span> CashRebate(<span class="string">&quot;0.8&quot;</span>);</span><br><span class="line">                cs = cr2;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> cs;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h6 id="客户端程序主要部分"><a href="#客户端程序主要部分" class="headerlink" title="客户端程序主要部分"></a>客户端程序主要部分</h6><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">double</span> total = <span class="number">0.0</span>d;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">btnOk_Click</span><span class="params">(object sender,EventArgs e)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    CashSuper csuper = CashFactory.createCashAccept(cbxType.SelectedItem.ToString());</span><br><span class="line">    <span class="comment">//利用简单工厂模式根据下拉选择框，生成相应的对象</span></span><br><span class="line">    <span class="keyword">double</span> totalPrices = <span class="number">0</span>d;</span><br><span class="line">    totalPrices = csuper.acceptCash(Convert.ToDouble(txtPrice.Text)</span><br><span class="line">                                    *Convert.ToDouble(txtNum.Text));</span><br><span class="line">    total = total + totalPrices;</span><br><span class="line">    lbxList.Items.Add(<span class="string">&quot;单价: &quot;</span> + txtPrice.Text + <span class="string">&quot;数量: &quot;</span> + txtNum.Text + <span class="string">&quot; &quot;</span></span><br><span class="line">        + cbxType.SelectedItem + <span class="string">&quot;合计: &quot;</span> + totalPrices.ToString());</span><br><span class="line">    lblResult.Text = total.ToString();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<p>虽然简单工厂模式可以满足各种收费方式，但是由于商场可能经常性的更改打折和返利额度。<br>每次维护或者扩展都需要改动工厂，导致代码需要重新编译部署，着实麻烦。<br>因此需要使用的设计模式是策略模式。</p>
-<p><b>策略模式</b>：它定义了算法家族，分别封装起来，让它们之间可以互相替换，此模式让算法的变化，不会影响到使用算法的用户。</p>
-<h5 id="策略模式结构图"><a href="#策略模式结构图" class="headerlink" title="策略模式结构图"></a>策略模式结构图</h5><p><img src="/assets/UML-Strategy.png" alt="UML-Strategy"></p>
-<h6 id="Strategy-类，定义所有支持的算法的公共接口"><a href="#Strategy-类，定义所有支持的算法的公共接口" class="headerlink" title="Strategy 类，定义所有支持的算法的公共接口"></a>Strategy 类，定义所有支持的算法的公共接口</h6><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//抽象算法类</span></span><br><span class="line">abstract <span class="class"><span class="keyword">class</span> <span class="title">Strategy</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="comment">//算法方法</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> abstract <span class="keyword">void</span> <span class="title">AlgorithmInterface</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h6 id="ConcreteStrategy-封装了具体的算法或行为，继承于-Strategy"><a href="#ConcreteStrategy-封装了具体的算法或行为，继承于-Strategy" class="headerlink" title="ConcreteStrategy,封装了具体的算法或行为，继承于 Strategy"></a>ConcreteStrategy,封装了具体的算法或行为，继承于 Strategy</h6><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//具体算法A</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ConcreteStrategyA</span> :</span> Strategy</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//算法A实现方法</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">AlgorithmInterface</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;算法A实现&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//具体算法B</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ConcreteStrategyB</span> :</span> Strategy</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//算法B实现方法</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">AlgorithmInterface</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;算法B实现&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//具体算法C</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ConcreteStrategyC</span> :</span> Strategy</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//算法C实现方法</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">AlgorithmInterface</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        Console.WriteLine(<span class="string">&quot;算法C实现&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h6 id="Context-用一个-ConcreteStrategy-来配置，维护一个对-Strategy-的引用"><a href="#Context-用一个-ConcreteStrategy-来配置，维护一个对-Strategy-的引用" class="headerlink" title="Context,用一个 ConcreteStrategy 来配置，维护一个对 Strategy 的引用"></a>Context,用一个 ConcreteStrategy 来配置，维护一个对 Strategy 的引用</h6><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Context</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    Strategy strategy;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Context</span><span class="params">(Strategy strategy)</span>  <span class="comment">//初始化时，传入具体的策略对象</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.strategy = strategy;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//上下文接口</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">ContextInterface</span><span class="params">()</span>  <span class="comment">// 根据具体的策略对象，调用其算法的方法</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        strategy.AlgorithmInterface();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h6 id="客户端代码"><a href="#客户端代码" class="headerlink" title="客户端代码"></a>客户端代码</h6><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span><span class="params">(<span class="built_in">string</span>[] args)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Context context;</span><br><span class="line">    context = <span class="keyword">new</span> Context(<span class="keyword">new</span> ConcreteStrategyA());</span><br><span class="line">    context.ContextInterface();</span><br><span class="line"></span><br><span class="line">    context = <span class="keyword">new</span> Context(<span class="keyword">new</span> ConcreteStrategyB());</span><br><span class="line">    context.ContextInterface();</span><br><span class="line"></span><br><span class="line">    context = <span class="keyword">new</span> Context(<span class="keyword">new</span> ConcreteStrategyC());</span><br><span class="line">    context.ContextInterface();</span><br><span class="line"></span><br><span class="line">    <span class="comment">//由于实例化不同的策略，所以最终在调用context.ContextInterface()时，所获得的结果就不尽相同</span></span><br><span class="line"></span><br><span class="line">    Console.Read();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="策略模式实现商场收银系统-1-2"><a href="#策略模式实现商场收银系统-1-2" class="headerlink" title="策略模式实现商场收银系统 1.2"></a>策略模式实现商场收银系统 1.2</h5><p><img src="/assets/UML-StrategyCash.png" alt="UML-StrategyCash"></p>
-<h6 id="CashContext-类-策略与简单工厂结合"><a href="#CashContext-类-策略与简单工厂结合" class="headerlink" title="CashContext 类 (策略与简单工厂结合)"></a>CashContext 类 (策略与简单工厂结合)</h6><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CashContext</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    CashSuper cs = null; <span class="comment">//声明一个CashSuper对象</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">CashContext</span><span class="params">(<span class="built_in">string</span> type)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="comment">//参数不是收费策略对象，而是一个字符串，表示收费类型</span></span><br><span class="line">        <span class="keyword">switch</span>(type)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&quot;正常收费&quot;</span>:</span><br><span class="line">                CashNormal cs0 = <span class="keyword">new</span> CashNormal();</span><br><span class="line">                cs = cs0;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&quot;满300返100&quot;</span>:</span><br><span class="line">                CashNormal cr1 = <span class="keyword">new</span> CashReturn(<span class="string">&quot;300&quot;</span>,<span class="string">&quot;100&quot;</span>);</span><br><span class="line">                cs = cr1;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">&quot;打8折&quot;</span>:</span><br><span class="line">                CashRebate cr2 = <span class="keyword">new</span> CashRebate(<span class="string">&quot;0.8&quot;</span>);</span><br><span class="line">                cs = cr2;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="comment">// 将实例化具体策略的过程由客户端转移到Context类中，简单工厂的应用</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">GetResult</span><span class="params">(<span class="keyword">double</span> money)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> cs.acceptCash(money);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h6 id="客户端主要代码"><a href="#客户端主要代码" class="headerlink" title="客户端主要代码"></a>客户端主要代码</h6><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">double</span> total = <span class="number">0.0</span>d;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">btnOk_Click</span><span class="params">(object sender,EventArgs e)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    CashContext csuper = <span class="keyword">new</span> CashContext(cbxType.SelectedItem.ToString());</span><br><span class="line">    <span class="comment">// 根据下拉选择框，将相应的算法类型字符串传入CashContext的对象中</span></span><br><span class="line">    <span class="keyword">double</span> totalPrices = <span class="number">0</span>d;</span><br><span class="line">    totalPrices = csuper.GetResult(Convert.ToDouble(txtPrice.Text) * Convert.ToDouble(txtNum.Text));</span><br><span class="line">    total = total + totalPrices;</span><br><span class="line">    lbxList.Items.Add(<span class="string">&quot;单价: &quot;</span> + txtPrice.Text + <span class="string">&quot;数量: &quot;</span> + txtNum.Text + <span class="string">&quot; &quot;</span> +cbxType.SelectedItem +</span><br><span class="line">        <span class="string">&quot;合计: &quot;</span> + totalPrices.ToString());</span><br><span class="line">    lblResult.Text = total.ToString();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>简单工厂模式需要客户端认识两个类，CashSuper 和 CashFactory，而策略模式与简单工厂结合的用法，让客户端只需要知道一个类 CashContext 即可</p>
-<h5 id="策略模式解析"><a href="#策略模式解析" class="headerlink" title="策略模式解析"></a>策略模式解析</h5><p><b>策略模式是一种定义一系列算法的方法，从概念上来看，所有这些算法完成的都是相同的工作，<br>只是实现不同，它可以以相同的方式调用所有的算法，减少了各种算法类与使用算法类之间的耦合。</b></p>
-<ul>
-<li>策略模式的 Strategy 类层次为 Context 定义了一系列的可供重用的算法或行为。继承有助于析取出这些算法中的公共功能。</li>
-<li>策略模式的优点是简化了单元测试，因为每个算法都有自己的类，可以通过自己的接口单独测试</li>
-<li>当不同的行为堆砌在一个类中时，就很难避免使用条件语句来选择合适的行为。将这些行为封装在一个个独立的 Strategy 类中，可以在使用这些行为的类中消除条件语句。</li>
-<li>策略模式就是用来封装算法的。</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">设计模式</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a
-            class="weixin share-sns wxFab"
-            href="javascript:;"
-            data-type="weixin"
-          >
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a
-            class="facebook share-sns"
-            href="javascript:;"
-            data-type="facebook"
-          >
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-  <a class="close js-modal-close" href="javascript:;"
-    ><i class="icon icon-close"></i
-  ></a>
-  <p>扫一扫，分享到微信</p>
-  <div class="wx-qrcode">
-    <img
-      src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yanhaha233.github.io/thub.io/2020/10/09/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/"
-      alt="微信分享二维码"
-    />
-  </div>
-</div>
-
-<div class="mask js-mask"></div>
-
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2020/10/09/%E5%8D%95%E4%B8%80%E8%81%8C%E8%B4%A3%E5%8E%9F%E5%88%99%E3%80%81%E5%BC%80%E6%94%BE-%E5%B0%81%E9%97%AD%E5%8E%9F%E5%88%99%E3%80%81%E4%BE%9D%E8%B5%96%E5%80%92%E8%BD%AC%E5%8E%9F%E5%88%99/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          单一职责原则、开放-封闭原则、依赖倒转原则
-        
-      </div>
-    </a>
   
   
-    <a href="/2020/10/08/%E7%AE%80%E5%8D%95%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">简单工厂模式</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%95%86%E5%9C%BA%E6%94%B6%E9%93%B6%E8%BD%AF%E4%BB%B6%EF%BC%8C%E6%A0%B9%E6%8D%AE%E5%AE%A2%E6%88%B7%E6%89%80%E8%B4%AD%E4%B9%B0%E5%95%86%E5%93%81%E7%9A%84%E5%8D%95%E4%BB%B7%E5%92%8C%E6%95%B0%E9%87%8F%EF%BC%8C%E5%90%91%E5%AE%A2%E6%88%B7%E6%94%B6%E8%B4%B9"><span class="toc-number">1.</span> <span class="toc-text">商场收银软件，根据客户所购买商品的单价和数量，向客户收费</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%95%86%E5%9C%BA%E6%94%B6%E9%93%B6%E7%B3%BB%E7%BB%9F-1-0"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">商场收银系统 1.0</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%95%86%E5%9C%BA%E6%94%B6%E9%93%B6%E7%B3%BB%E7%BB%9F-1-1"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">商场收银系统 1.1</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#UML-%E5%9B%BE"><span class="toc-number">1.0.0.3.</span> <span class="toc-text">UML 图</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%95%86%E5%9C%BA%E6%94%B6%E9%93%B6%E7%B3%BB%E7%BB%9F-1-1-2"><span class="toc-number">1.0.0.4.</span> <span class="toc-text">商场收银系统 1.1.2</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%8E%B0%E9%87%91%E6%94%B6%E8%B4%B9%E6%8A%BD%E8%B1%A1%E7%B1%BB"><span class="toc-number">1.0.0.4.1.</span> <span class="toc-text">现金收费抽象类</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%AD%A3%E5%B8%B8%E6%94%B6%E8%B4%B9%E5%AD%90%E7%B1%BB"><span class="toc-number">1.0.0.4.2.</span> <span class="toc-text">正常收费子类</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%89%93%E6%8A%98%E6%94%B6%E8%B4%B9%E5%AD%90%E7%B1%BB"><span class="toc-number">1.0.0.4.3.</span> <span class="toc-text">打折收费子类</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E8%BF%94%E5%88%A9%E6%94%B6%E8%B4%B9%E5%AD%90%E7%B1%BB"><span class="toc-number">1.0.0.4.4.</span> <span class="toc-text">返利收费子类</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%8E%B0%E9%87%91%E6%94%B6%E8%B4%B9%E5%B7%A5%E5%8E%82%E7%B1%BB"><span class="toc-number">1.0.0.4.5.</span> <span class="toc-text">现金收费工厂类</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%A8%8B%E5%BA%8F%E4%B8%BB%E8%A6%81%E9%83%A8%E5%88%86"><span class="toc-number">1.0.0.4.6.</span> <span class="toc-text">客户端程序主要部分</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F%E7%BB%93%E6%9E%84%E5%9B%BE"><span class="toc-number">1.0.0.5.</span> <span class="toc-text">策略模式结构图</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#Strategy-%E7%B1%BB%EF%BC%8C%E5%AE%9A%E4%B9%89%E6%89%80%E6%9C%89%E6%94%AF%E6%8C%81%E7%9A%84%E7%AE%97%E6%B3%95%E7%9A%84%E5%85%AC%E5%85%B1%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.0.0.5.1.</span> <span class="toc-text">Strategy 类，定义所有支持的算法的公共接口</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#ConcreteStrategy-%E5%B0%81%E8%A3%85%E4%BA%86%E5%85%B7%E4%BD%93%E7%9A%84%E7%AE%97%E6%B3%95%E6%88%96%E8%A1%8C%E4%B8%BA%EF%BC%8C%E7%BB%A7%E6%89%BF%E4%BA%8E-Strategy"><span class="toc-number">1.0.0.5.2.</span> <span class="toc-text">ConcreteStrategy,封装了具体的算法或行为，继承于 Strategy</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#Context-%E7%94%A8%E4%B8%80%E4%B8%AA-ConcreteStrategy-%E6%9D%A5%E9%85%8D%E7%BD%AE%EF%BC%8C%E7%BB%B4%E6%8A%A4%E4%B8%80%E4%B8%AA%E5%AF%B9-Strategy-%E7%9A%84%E5%BC%95%E7%94%A8"><span class="toc-number">1.0.0.5.3.</span> <span class="toc-text">Context,用一个 ConcreteStrategy 来配置，维护一个对 Strategy 的引用</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%BB%A3%E7%A0%81"><span class="toc-number">1.0.0.5.4.</span> <span class="toc-text">客户端代码</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F%E5%AE%9E%E7%8E%B0%E5%95%86%E5%9C%BA%E6%94%B6%E9%93%B6%E7%B3%BB%E7%BB%9F-1-2"><span class="toc-number">1.0.0.6.</span> <span class="toc-text">策略模式实现商场收银系统 1.2</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#CashContext-%E7%B1%BB-%E7%AD%96%E7%95%A5%E4%B8%8E%E7%AE%80%E5%8D%95%E5%B7%A5%E5%8E%82%E7%BB%93%E5%90%88"><span class="toc-number">1.0.0.6.1.</span> <span class="toc-text">CashContext 类 (策略与简单工厂结合)</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%BB%E8%A6%81%E4%BB%A3%E7%A0%81"><span class="toc-number">1.0.0.6.2.</span> <span class="toc-text">客户端主要代码</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F%E8%A7%A3%E6%9E%90"><span class="toc-number">1.0.0.7.</span> <span class="toc-text">策略模式解析</span></a></li></ol></li></ol></li></ol></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
+    
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/archives/2020/page/4/">上一页</a><a class="page-number" href="/archives/2020/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/2020/page/3/">3</a><a class="page-number" href="/archives/2020/page/4/">4</a><span class="page-number current">5</span>
+    </nav>
   
-
-  
-
-  
-
 
 
           </div>
@@ -463,8 +256,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
