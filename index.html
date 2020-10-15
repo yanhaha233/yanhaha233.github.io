@@ -59,7 +59,7 @@
 
     <nav class="header-menu">
       <ul>
-        总文章数 34 
+        总文章数 39 
         <li><a href="/">大</a></li>
         
         <li><a href="/tags/%E7%AE%97%E6%B3%95/">道</a></li>
@@ -363,20 +363,20 @@
 
 
   
-    <article id="post-leetcode 454.四数相加II" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-leetcode 700.二叉搜索树中的搜索" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/10/14/leetcode%20454.%E5%9B%9B%E6%95%B0%E7%9B%B8%E5%8A%A0II/">leetcode 454.四数相加II</a>
+      <a class="article-title" href="/2020/10/15/leetcode%20700.%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E6%90%9C%E7%B4%A2/">leetcode 700.二叉搜索树中的搜索</a>
     </h1>
   
 
         
-        <a href="/2020/10/14/leetcode%20454.%E5%9B%9B%E6%95%B0%E7%9B%B8%E5%8A%A0II/" class="archive-article-date">
-  	<time datetime="2020-10-14T03:22:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-14</time>
+        <a href="/2020/10/15/leetcode%20700.%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E6%90%9C%E7%B4%A2/" class="archive-article-date">
+  	<time datetime="2020-10-15T02:34:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-15</time>
 </a>
         
           <div style="margin-top: 10px">
@@ -384,7 +384,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-keyboard-o"></i>
       <span class="post-meta-item-text"> 字数统计: </span>
-      <span class="post-count">164字</span>
+      <span class="post-count">400字</span>
     </span>
   </span>
 
@@ -404,10 +404,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>给定四个包含整数的数组列表  A , B , C , D ,计算有多少个元组 (i, j, k, l) ，使得  A[i] + B[j] + C[k] + D[l] = 0。</p>
-<p>为了使问题简单化，所有的 A, B, C, D 具有相同的长度  N，且 0 ≤ N ≤ 500 。所有整数的范围在 -228 到 228 - 1 之间，最终结果不会超过  231 - 1 。</p>
+        <p>给定二叉搜索树（BST）的根节点和一个值。你需要在 BST 中找到节点值等于给定值的节点。 返回以该节点为根的子树。 如果节点不存在，则返回 NULL。</p>
 <p><b>示例：</b></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">输入:</span><br><span class="line">A &#x3D; [ 1, 2]</span><br><span class="line">B &#x3D; [-2,-1]</span><br><span class="line">C &#x3D; [-1, 2]</span><br><span class="line">D &#x3D; [ 0, 2]</span><br><span class="line"></span><br><span class="line">输出:</span><br><span class="line">2</span><br><span class="line"></span><br><span class="line">解释:</span><br><span class="line">两个元组如下:</span><br><span class="line">1. (0, 0, 0, 1) -&gt; A[0] + B[0] + C[0] + D[1] &#x3D; 1 + (-2) + (-1) + 2 &#x3D; 0</span><br><span class="line">2. (1, 1, 0, 0) -&gt; A[1] + B[1] + C[0] + D[0] &#x3D; 2 + (-1) + (-1) + 0 &#x3D; 0</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">给定二叉搜索树：</span><br><span class="line"></span><br><span class="line">        4</span><br><span class="line">       &#x2F; \</span><br><span class="line">      2   7</span><br><span class="line">     &#x2F; \</span><br><span class="line">    1   3</span><br><span class="line"></span><br><span class="line">和值: 2</span><br></pre></td></tr></table></figure>
+
+<p>得到如下子树：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">  2</span><br><span class="line"> &#x2F; \</span><br><span class="line">1   3</span><br></pre></td></tr></table></figure>
+
+<p>在上述示例中，如果要找的值是 5，但因为没有节点值为 5，我们应该返回 NULL。</p>
         
       
 
@@ -421,7 +425,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">哈希表</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">简单</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -429,7 +433,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">中等</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">树</a>
         		</li>
       		
 		</ul>
@@ -439,7 +443,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/10/14/leetcode%20454.%E5%9B%9B%E6%95%B0%E7%9B%B8%E5%8A%A0II/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/10/15/leetcode%20700.%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E6%90%9C%E7%B4%A2/">展开全文 >></a>
         </p>
       
 
@@ -469,20 +473,20 @@
 
 
   
-    <article id="post-leetcode 202.快乐数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-leetcode 530.二叉搜索树的最小绝对差" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/10/14/leetcode%20202.%E5%BF%AB%E4%B9%90%E6%95%B0/">leetcode 202.快乐数</a>
+      <a class="article-title" href="/2020/10/15/leetcode%20530.%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E6%9C%80%E5%B0%8F%E7%BB%9D%E5%AF%B9%E5%B7%AE/">leetcode 530.二叉搜索树的最小绝对差</a>
     </h1>
   
 
         
-        <a href="/2020/10/14/leetcode%20202.%E5%BF%AB%E4%B9%90%E6%95%B0/" class="archive-article-date">
-  	<time datetime="2020-10-14T02:35:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-14</time>
+        <a href="/2020/10/15/leetcode%20530.%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E6%9C%80%E5%B0%8F%E7%BB%9D%E5%AF%B9%E5%B7%AE/" class="archive-article-date">
+  	<time datetime="2020-10-15T01:24:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-15</time>
 </a>
         
           <div style="margin-top: 10px">
@@ -490,7 +494,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-keyboard-o"></i>
       <span class="post-meta-item-text"> 字数统计: </span>
-      <span class="post-count">224字</span>
+      <span class="post-count">466字</span>
     </span>
   </span>
 
@@ -499,7 +503,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-hourglass-half"></i>
       <span class="post-meta-item-text"> 阅读时长: </span>
-      <span class="post-count">1分</span>
+      <span class="post-count">2分</span>
     </span>
   </span>
 </div>
@@ -510,11 +514,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>编写一个算法来判断一个数 n 是不是快乐数。</p>
-<p>「快乐数」定义为：对于一个正整数，每一次将该数替换为它每个位置上的数字的平方和，然后重复这个过程直到这个数变为 1，也可能是 无限循环 但始终变不到 1。如果 可以变为 1，那么这个数就是快乐数。</p>
-<p>如果 n 是快乐数就返回 True ；不是，则返回 False 。</p>
+        <p>给你一棵所有节点为非负值的二叉搜索树，请你计算树中任意两节点的差的绝对值的最小值。(树中至少有两个节点)</p>
 <p><b>示例：</b></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">输入：19</span><br><span class="line">输出：true</span><br><span class="line">解释：</span><br><span class="line">1^2 + 9^2 &#x3D; 82</span><br><span class="line">8^2 + 2^2 &#x3D; 68</span><br><span class="line">6^2 + 8^2 &#x3D; 100</span><br><span class="line">1^2 + 0^2 + 0^2 &#x3D; 1</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">输入：</span><br><span class="line"></span><br><span class="line">   1</span><br><span class="line">    \</span><br><span class="line">     3</span><br><span class="line">    &#x2F;</span><br><span class="line">   2</span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line">1</span><br><span class="line"></span><br><span class="line">解释：</span><br><span class="line">最小绝对差为 1，其中 2 和 1 的差的绝对值为 1（或者 2 和 3）。</span><br></pre></td></tr></table></figure>
         
       
 
@@ -528,10 +530,6 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">哈希表</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">简单</a>
         		</li>
       		 
@@ -540,7 +538,15 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">树</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">递归</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">迭代</a>
         		</li>
       		
 		</ul>
@@ -550,7 +556,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/10/14/leetcode%20202.%E5%BF%AB%E4%B9%90%E6%95%B0/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/10/15/leetcode%20530.%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E6%9C%80%E5%B0%8F%E7%BB%9D%E5%AF%B9%E5%B7%AE/">展开全文 >></a>
         </p>
       
 
@@ -580,20 +586,20 @@
 
 
   
-    <article id="post-leetcode 349.两个数组的交集" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-leetcode 383.赎金信" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/10/14/leetcode%20349.%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86/">leetcode 349.两个数组的交集</a>
+      <a class="article-title" href="/2020/10/15/leetcode%20383.%E8%B5%8E%E9%87%91%E4%BF%A1/">leetcode 383.赎金信</a>
     </h1>
   
 
         
-        <a href="/2020/10/14/leetcode%20349.%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86/" class="archive-article-date">
-  	<time datetime="2020-10-14T02:03:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-14</time>
+        <a href="/2020/10/15/leetcode%20383.%E8%B5%8E%E9%87%91%E4%BF%A1/" class="archive-article-date">
+  	<time datetime="2020-10-15T00:36:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-15</time>
 </a>
         
           <div style="margin-top: 10px">
@@ -601,7 +607,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-keyboard-o"></i>
       <span class="post-meta-item-text"> 字数统计: </span>
-      <span class="post-count">168字</span>
+      <span class="post-count">450字</span>
     </span>
   </span>
 
@@ -621,18 +627,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>给定两个数组，编写一个函数来计算它们的交集。</p>
-<p><b>示例 1：</b></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：nums1 &#x3D; [1,2,2,1], nums2 &#x3D; [2,2]</span><br><span class="line">输出：[2]</span><br></pre></td></tr></table></figure>
-
-<p><b>示例 2：</b></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：nums1 &#x3D; [4,9,5], nums2 &#x3D; [9,4,9,8,4]</span><br><span class="line">输出：[9,4]</span><br></pre></td></tr></table></figure>
-
-<p><b>说明：</b></p>
-<ul>
-<li>输出结果中的每个元素一定是唯一的。</li>
-<li>我们可以不考虑输出结果的顺序。</li>
-</ul>
+        <p>给定一个赎金信 (ransom) 字符串和一个杂志(magazine)字符串，判断第一个字符串 ransom 能不能由第二个字符串 magazines 里面的字符构成。如果可以构成，返回 true ；否则返回 false。</p>
+<p>(题目说明：为了不暴露赎金信字迹，要从杂志上搜索各个需要的字母，组成单词来表达意思。杂志字符串中的每个字符只能在赎金信字符串中使用一次。)</p>
+<p><b>注意：</b><br>你可以假设两个字符串均只含有小写字母。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">canConstruct(&quot;a&quot;, &quot;b&quot;) -&gt; false</span><br><span class="line">canConstruct(&quot;aa&quot;, &quot;ab&quot;) -&gt; false</span><br><span class="line">canConstruct(&quot;aa&quot;, &quot;aab&quot;) -&gt; true</span><br></pre></td></tr></table></figure>
         
       
 
@@ -656,6 +654,10 @@
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
         		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">字符串</a>
+        		</li>
       		
 		</ul>
 	</div>
@@ -664,7 +666,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/10/14/leetcode%20349.%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E7%9A%84%E4%BA%A4%E9%9B%86/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/10/15/leetcode%20383.%E8%B5%8E%E9%87%91%E4%BF%A1/">展开全文 >></a>
         </p>
       
 
@@ -696,7 +698,7 @@
   
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
     </nav>
   
 
@@ -8830,6 +8832,10 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">暴力法</a>
               </li>
              
@@ -8846,7 +8852,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SQL</a>
+                <a href="javascript:void(0)" class="js-tag color4">字符串</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -8878,14 +8884,6 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">字符串</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">排序</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">堆</a>
               </li>
              
@@ -8902,7 +8900,23 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">树</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">递归</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">迭代</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">DFS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">排序</a>
               </li>
              
               <li class="article-tag-list-item">
