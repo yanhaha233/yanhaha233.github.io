@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+}
+
+a {
+  position: absolute;
+  margin: auto;
+  width: 300px;
+  height: 100px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #90c;
+  text-align: center;
+  line-height: 100px;
+  /* 水平垂直居中 */
+  text-decoration: none;
+  /* 下划线去除 */
+  color: white;
+  border-radius: 50px;
+  /* 圆角 */
+
+  /* 渐变色从左往右去变 */
+  background: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  /* 将背景宽度拉倒400%，方便实现流动 */
+  background-size: 400%;
+}
+
+a:hover {
+  animation: liuguang 6s linear infinite;
+  /* 流光动画 时间6s 线性变化 无限循环 */
+}
+
+/* 伪类元素 */
+a::after {
+  content: "";
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  top: -5px;
+  bottom: -5px;
+  background: white;
+  border-radius: 55px;
+  /* 因为多出5px，所以圆角也要多出5px */
+  /* 层级在下面 */
+  z-index: -1;
+  /* 效果同上层一样 */
+  /* 渐变色从左往右去变 */
+  background: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  /* 将背景宽度拉倒400%，方便实现流动 */
+  background-size: 400%;
+}
+
+/* 伪类元素的动画效果 */
+a:hover::after {
+  animation: liuguang 6s linear infinite;
+  /* 流光动画 时间6s 线性变化 无限循环 */
+  filter: blur(10px);
+  /* 增加模糊效果 */
+}
+
+/* 动画 */
+@keyframes liuguang {
+  100% {
+    background-position: 400% 0;
+    /* 修改背景位置 */
+
+    /* -400%为方向流动 */
+    /* background-position: -400% 0; */
+  }
+}

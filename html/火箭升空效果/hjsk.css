@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  background: rgb(0, 2, 19);
+
+  /* 将图片放置在中间 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .rocket {
+  position: relative;
+  /* 蓝光的相对定位 */
+  animation: shake 0.5s linear infinite;
+  /* 0.2s 线性渐变 无限循环 */
+}
+
+@keyframes shake {
+  /* 确保火箭上下速度均匀 */
+  0%,
+  100% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+}
+
+.container .rocket::after {
+  content: "";
+  width: 10px;
+  height: 150px;
+  /* 向透明色渐变 */
+  background: linear-gradient(rgb(40, 158, 194), transparent);
+  position: absolute;
+  /* 让火焰居中 先根据整体向左50%，再根据自身向左50% 
+  垂直居中也可以类似使用*/
+  left: 50%;
+  transform: translateX(-50%);
+  /* 垂直方向偏移 */
+  bottom: -150px;
+}
+
+.container i {
+  /* 下落光线 */
+  width: 1px;
+  height: 20px; /*高度动态随机 30-100px*/
+  position: absolute;
+  left: 20px; /*宽度动态随机 1-99vw*/
+  top: 0px;
+  background: #fff;
+  animation: line 2s linear infinite;
+}
+
+@keyframes line {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(90vh);
+    /* 防止视图超出产生下拉条 */
+  }
+}

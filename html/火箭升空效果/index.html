@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>火箭升空效果</title>
+    <link rel="stylesheet" href="hjsk.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 首先设置容器，容器中放置火箭和光线 -->
+        <div class="rocket">
+            <!-- 放置火箭 -->
+            <img src="rocket.png" alt="">
+        </div>
+
+        <i></i>
+    </div>
+
+    <script>
+        function rand(m,n) {
+            return Math.ceil(Math.random() * (n-m+1)) + m - 1;
+            //随机生成m-n之间的数字
+        }
+
+        //光线数量
+        let num =40;
+        //循环
+        for(let i = 0;i<num;i++)
+        {
+            //创建i元素
+            const i = document.createElement('i');
+            //设置样式
+            i.style.height = rand(30,100) + 'px';
+            i.style.left = rand(1,99) + 'vw';
+            //随机动画的时间
+            i.style.animationDuration = rand(5,30)/10 + 's'
+            // 0.5s - 3s
+            //将i 插入到container中
+            document.querySelector('.container').appendChild(i);
+        }
+    </script>
+</body>
+</html>
