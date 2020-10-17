@@ -17,7 +17,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yanhaha233.github.io/assets/leetcode/binarytree.png">
 <meta property="article:published_time" content="2020-10-17T01:42:23.000Z">
-<meta property="article:modified_time" content="2020-10-17T02:57:03.854Z">
+<meta property="article:modified_time" content="2020-10-17T05:29:44.313Z">
 <meta property="article:author" content="YanHaHa">
 <meta property="article:tag" content="算法">
 <meta property="article:tag" content="中等">
@@ -68,7 +68,7 @@
 
     <nav class="header-menu">
       <ul>
-        总文章数 47 
+        总文章数 49 
         <li><a href="/">大</a></li>
         
         <li><a href="/tags/%E7%AE%97%E6%B3%95/">道</a></li>
@@ -206,7 +206,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-keyboard-o"></i>
       <span class="post-meta-item-text"> 字数统计: </span>
-      <span class="post-count">565字</span>
+      <span class="post-count">727字</span>
     </span>
   </span>
 
@@ -256,6 +256,10 @@
 <p>函数存在返回值，回溯的过程需要递归函数的返回值来做判断，需要遍历树的所有节点。</p>
 </li>
 </ul>
+<hr>
+<p>因为不能立刻返回，所以要遍历整个树（即使早早发现了目标节点）。</p>
+<p>如果 left 和 right 都不为空，说明 root 就是最近公共节点。<br>如果 left 为空，right 不为空，就返回 right，说明目标节点是通过 right 返回的，反之一样。<br>如果 left 和 right 都为空，则返回空。</p>
+<h3 id="回溯"><a href="#回溯" class="headerlink" title="回溯"></a>回溯</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="function">TreeNode* <span class="title">lowestCommonAncestor</span><span class="params">(TreeNode* root, TreeNode* p,TreeNode* q)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(root == p || root == q || root == <span class="literal">NULL</span>) <span class="keyword">return</span> root;</span><br><span class="line">    TreeNode* left = lowestCommonAncestor(root-&gt;left,p,q);</span><br><span class="line">    TreeNode* right = lowestCommonAncestor(root-&gt;right,p,q);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(left != <span class="literal">NULL</span> &amp;&amp; right != <span class="literal">NULL</span>)<span class="keyword">return</span> root;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(left == <span class="literal">NULL</span> &amp;&amp; right != <span class="literal">NULL</span>)<span class="keyword">return</span> right;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span>(left != <span class="literal">NULL</span> &amp;&amp; right == <span class="literal">NULL</span>)<span class="keyword">return</span> left;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
 
@@ -361,6 +365,15 @@
   
 <nav id="article-nav">
   
+    <a href="/2020/10/17/leetcode%2059.%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5II/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          leetcode 59.螺旋矩阵II
+        
+      </div>
+    </a>
+  
   
     <a href="/2020/10/17/HTML+CSS%205.%E6%90%9C%E7%B4%A2%E6%A1%86%E8%87%AA%E5%8A%A8%E5%B1%95%E5%BC%80/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">HTML+CSS 5.搜索框自动展开</div>
@@ -390,7 +403,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9E%E6%BA%AF"><span class="toc-number">1.</span> <span class="toc-text">回溯</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -8550,15 +8563,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">暴力法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">哈希表</a>
+                <a href="javascript:void(0)" class="js-tag color4">字符串</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -8567,10 +8572,6 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">算法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">字符串</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -8598,6 +8599,14 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">栈</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">哈希表</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">堆</a>
               </li>
              
@@ -8610,7 +8619,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">栈</a>
+                <a href="javascript:void(0)" class="js-tag color2">树</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -8618,7 +8627,15 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">树</a>
+                <a href="javascript:void(0)" class="js-tag color4">暴力法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">SQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">动态规划</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -8627,10 +8644,6 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">迭代</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">动态规划</a>
               </li>
              
               <li class="article-tag-list-item">
