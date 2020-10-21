@@ -6,15 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yanhaha233.github.io">
-  <title>Tag: DFS | YanHaHa&#39;s Blog</title>
+  <title>leetcode 235.二叉搜索树的最近公共祖先 | YanHaHa&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="YanHaHa&#39;s Blog">
-<meta property="og:url" content="http://yanhaha233.github.io/tags/DFS/index.html">
+  <meta name="description" content="给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。 百度百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。” 例如，给定如下二叉搜索树:  root &#x3D; [6,2,8,0,4,7,9,null,null,3,5]  示例 1： 123输入: root &amp;#x">
+<meta property="og:type" content="article">
+<meta property="og:title" content="leetcode 235.二叉搜索树的最近公共祖先">
+<meta property="og:url" content="http://yanhaha233.github.io/2020/10/19/leetcode%20235.%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88/index.html">
 <meta property="og:site_name" content="YanHaHa&#39;s Blog">
+<meta property="og:description" content="给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。 百度百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。” 例如，给定如下二叉搜索树:  root &#x3D; [6,2,8,0,4,7,9,null,null,3,5]  示例 1： 123输入: root &amp;#x">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yanhaha233.github.io/assests/leetcode/binarysearchtree_improved.png">
+<meta property="article:published_time" content="2020-10-19T07:56:11.000Z">
+<meta property="article:modified_time" content="2020-10-20T00:08:18.544Z">
 <meta property="article:author" content="YanHaHa">
+<meta property="article:tag" content="简单">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="树">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yanhaha233.github.io/assests/leetcode/binarysearchtree_improved.png">
   
     <link rel="alternative" href="/atom.xml" title="YanHaHa&#39;s Blog" type="application/atom+xml">
   
@@ -59,7 +68,7 @@
 
     <nav class="header-menu">
       <ul>
-        总文章数 49 
+        总文章数 54 
         <li><a href="/">大</a></li>
         
         <li><a href="/tags/%E7%AE%97%E6%B3%95/">道</a></li>
@@ -176,72 +185,233 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+             <article id="post-leetcode 235.二叉搜索树的最近公共祖先" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/14/leetcode%2098.%E9%AA%8C%E8%AF%81%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/" class="archive-article-date">
-  	<time datetime="2020-10-14T05:27:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-14</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/14/leetcode%2098.%E9%AA%8C%E8%AF%81%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/">leetcode 98.验证二叉搜索树</a>
+    <h1 class="article-title" itemprop="name">
+      leetcode 235.二叉搜索树的最近公共祖先
     </h1>
   
 
-        <div class="article-info info-on-right">
+        
+        <a href="/2020/10/19/leetcode%20235.%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88/" class="archive-article-date">
+  	<time datetime="2020-10-19T07:56:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-19</time>
+</a>
+        
+          <div style="margin-top: 10px">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-keyboard-o"></i>
+      <span class="post-meta-item-text"> 字数统计: </span>
+      <span class="post-count">532字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="fa fa-hourglass-half"></i>
+      <span class="post-meta-item-text"> 阅读时长: </span>
+      <span class="post-count">2分</span>
+    </span>
+  </span>
+</div>
+
           
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。</p>
+<p>百度百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。”</p>
+<p>例如，给定如下二叉搜索树:  root = [6,2,8,0,4,7,9,null,null,3,5]</p>
+<p><img src="/assests/leetcode/binarysearchtree_improved.png" alt="binarysearchtree_improved"></p>
+<p><b>示例 1：</b></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入: root &#x3D; [6,2,8,0,4,7,9,null,null,3,5], p &#x3D; 2, q &#x3D; 8</span><br><span class="line">输出: 6</span><br><span class="line">解释: 节点 2 和节点 8 的最近公共祖先是 6。</span><br></pre></td></tr></table></figure>
+
+<p><b>示例 2：</b></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入: root &#x3D; [6,2,8,0,4,7,9,null,null,3,5], p &#x3D; 2, q &#x3D; 4</span><br><span class="line">输出: 2</span><br><span class="line">解释: 节点 2 和节点 4 的最近公共祖先是 2, 因为根据定义最近公共祖先节点可以为节点本身。</span><br></pre></td></tr></table></figure>
+
+<p><b>说明：</b></p>
+<ul>
+<li>所有节点的值都是唯一的</li>
+<li>p、q 为不同节点且均存在于给定的二叉搜索树中。</li>
+</ul>
+<a id="more"></a>
+
+<h3 id="递归-I"><a href="#递归-I" class="headerlink" title="递归 I"></a>递归 I</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>&#123;</span></span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">    <span class="function">TreeNode* <span class="title">traversal</span><span class="params">(TreeNode* cur, TreeNode* p, TreeNode* q)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (cur == <span class="literal">NULL</span>) <span class="keyword">return</span> cur;</span><br><span class="line">                                                        <span class="comment">// 根</span></span><br><span class="line">        <span class="keyword">if</span> (cur-&gt;val &gt; p-&gt;val &amp;&amp; cur-&gt;val &gt; q-&gt;val) &#123;   <span class="comment">// 左</span></span><br><span class="line">            TreeNode* left = traversal(cur-&gt;left, p, q);</span><br><span class="line">            <span class="keyword">if</span> (left != <span class="literal">NULL</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> left;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (cur-&gt;val &lt; p-&gt;val &amp;&amp; cur-&gt;val &lt; q-&gt;val) &#123;   <span class="comment">// 右</span></span><br><span class="line">            TreeNode* right = traversal(cur-&gt;right, p, q);</span><br><span class="line">            <span class="keyword">if</span> (right != <span class="literal">NULL</span>) &#123;</span><br><span class="line">                <span class="keyword">return</span> right;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> cur;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">TreeNode* <span class="title">lowestCommonAncestor</span><span class="params">(TreeNode* root, TreeNode* p, TreeNode* q)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> traversal(root, p, q);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="递归-I-精简"><a href="#递归-I-精简" class="headerlink" title="递归 I 精简"></a>递归 I 精简</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">TreeNode* <span class="title">lowestCommonAncestor</span><span class="params">(TreeNode* root,TreeNode* p,TreeNode* q)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root-&gt;val &gt; p-&gt;val &amp;&amp; root-&gt;val &gt; q-&gt;val)&#123;</span><br><span class="line">            <span class="keyword">return</span> lowestCommonAncestor(root-&gt;left,p,q);</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(root-&gt;val &lt; p-&gt;val &amp;&amp; root-&gt;val &lt; q-&gt;val)&#123;</span><br><span class="line">            <span class="keyword">return</span> lowestCommonAncestor(root-&gt;right,p,q);</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">return</span> root;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="迭代法"><a href="#迭代法" class="headerlink" title="迭代法"></a>迭代法</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function">TreeNode* <span class="title">lowestCommonAncestor</span><span class="params">(TreeNode* root,TreeNode* p,TreeNode* q)</span></span>&#123;</span><br><span class="line">        <span class="keyword">while</span>(root)&#123;</span><br><span class="line">            <span class="keyword">if</span>(root-&gt;val &gt; p-&gt;val &amp;&amp; root-&gt;val &gt; q-&gt;val)&#123;</span><br><span class="line">                root = root-&gt;left;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(root-&gt;val &lt; p-&gt;val &amp;&amp; root-&gt;val &lt; q-&gt;val)&#123;</span><br><span class="line">                root = root-&gt;right;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">return</span> root;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">简单</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">中等</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">树</a>
         		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">DFS</a>
-        		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a
+            class="weixin share-sns wxFab"
+            href="javascript:;"
+            data-type="weixin"
+          >
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a
+            class="facebook share-sns"
+            href="javascript:;"
+            data-type="facebook"
+          >
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+  <a class="close js-modal-close" href="javascript:;"
+    ><i class="icon icon-close"></i
+  ></a>
+  <p>扫一扫，分享到微信</p>
+  <div class="wx-qrcode">
+    <img
+      src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yanhaha233.github.io/thub.io/2020/10/19/leetcode%20235.%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88/"
+      alt="微信分享二维码"
+    />
+  </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2020/10/20/leetcode%20701.%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E6%8F%92%E5%85%A5%E6%93%8D%E4%BD%9C/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          leetcode 701.二叉搜索树中的插入操作
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2020/10/17/leetcode%20203.%E7%A7%BB%E9%99%A4%E9%93%BE%E8%A1%A8%E5%85%83%E7%B4%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">leetcode 203.移除链表元素</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%92%E5%BD%92-I"><span class="toc-number">1.</span> <span class="toc-text">递归 I</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%92%E5%BD%92-I-%E7%B2%BE%E7%AE%80"><span class="toc-number">2.</span> <span class="toc-text">递归 I 精简</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text">迭代法</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
+
 
 
           </div>
@@ -267,9 +437,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
@@ -8381,7 +8551,15 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">字符串</a>
+                <a href="javascript:void(0)" class="js-tag color4">SQL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">暴力法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">哈希表</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -8390,6 +8568,10 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">字符串</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -8409,19 +8591,15 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">中等</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">数学</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">栈</a>
+                <a href="javascript:void(0)" class="js-tag color3">中等</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">哈希表</a>
+                <a href="javascript:void(0)" class="js-tag color2">栈</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -8445,18 +8623,6 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">暴力法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">SQL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">动态规划</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">递归</a>
               </li>
              
@@ -8465,7 +8631,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">DFS</a>
+                <a href="javascript:void(0)" class="js-tag color5">动态规划</a>
               </li>
              
               <li class="article-tag-list-item">
